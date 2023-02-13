@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Grotesk';
+    src: url('./fonts/Rounded_Elegance.ttf');
+}
+
+@font-face {
+    font-family: 'Grotesk-Light';
+    src: url('./fonts/Typo-Grotesk-Rounded-Light.otf');
+}
+
+body {
+    font-family: 'Grotesk-Light';
+}
+
+.container {
+    margin: auto;
+    max-width: 1400px;
+
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 5rem;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li:hover .li_title {
+    opacity: 1;
+}
+
+.nav_menu {
+    display: none;
+}
+
+.li_title {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
